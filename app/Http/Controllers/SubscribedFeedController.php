@@ -40,6 +40,12 @@ class SubscribedFeedController extends Controller
     public function unsubscribe(Request $request, int $id)
     {
         $subscribed_feed = SubscribedFeed::find($id);
+        if ($subscribed_feed === null)
+        {
+            Session::flash('warning-message', 'That feed does not exist!');
+            return redirect()->route('dashboard');
+        }
+
         $subscribed_feed_url = $subscribed_feed->feed->getURL();
 
         if ($subscribed_feed->delete())
