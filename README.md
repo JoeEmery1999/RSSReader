@@ -49,7 +49,7 @@ This will print out a url to visit, from there you can view the project.
 
 
 
-###Testing
+### Testing
 To run any unit tests on this application use the following command:
 ```
 php artisan test
