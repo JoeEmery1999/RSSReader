@@ -10,7 +10,7 @@ Also ensure that your active php.ini has `extension=pdo_sqlite` uncommented.
 
 Clone project into chosen location. 
 ```
-git clone https://github.com/
+git clone https://github.com/JoeEmery1999/RSSReader
 ```
 
 Ensure there is a .env file in the root of the project and that it is populated with the following:
